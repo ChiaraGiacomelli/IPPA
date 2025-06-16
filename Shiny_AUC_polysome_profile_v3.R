@@ -27,7 +27,7 @@ ui <- fluidPage(
       numericInput("baseline", "Baseline", value = 0.16, step = 0.01),
       numericInput("start_80s", "Start of 80S", value = 1.1, step = 0.05),
       numericInput("end_80s", "End of 80S", value = 2, step = 0.05),
-      numericInput("max_fraction", "Max Fraction", value = 4.5, step = 0.1),
+      numericInput("max_fraction", "Max Volume", value = 4.5, step = 0.1),
       numericInput("ymin", "Y Axis Min", value = 0),
       numericInput("ymax", "Y Axis Max", value = 2, step = 0.2),
       selectInput("x_axis_type", "X Axis Type", choices = c("Volume", "Fraction Number"), selected = "Volume"),
