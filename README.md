@@ -1,6 +1,5 @@
 # IPPA
 **Interactive Polysome Profile Analyser**
-**CC-BY**
 
 This Shiny app has been created to read in csv files from BioComp Gradient Fractionators and calculate the area under the curve (AUC) of polysome profiles to do monosome to polysome (or subpolysome to polysome) ratios.
 
@@ -19,3 +18,7 @@ The basis of this shiny app is a function written by Joseph Waldron, currently A
 Repeat the uploading, plotting, and calculation for all the gradients you want to analyse
 Then export the csv file for further processing
    
+**CC-BY**
+Chiara Giacomelli
+20250616
+Currently PostDoc in the Proteome Dynamics lab of Matthias Selbach at the Max Delbrück Center for Molecular Medicine
