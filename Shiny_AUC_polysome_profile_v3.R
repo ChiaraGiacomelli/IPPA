@@ -79,7 +79,7 @@ server <- function(input, output, session) {
       geom_vline(xintercept = input$end_80s, linetype = "dashed", color = "darkblue") +
       geom_vline(xintercept = input$max_fraction, linetype = "dashed", color = "darkred") +
       geom_hline(yintercept = input$baseline, linetype = "dashed", color = "darkgreen") +
-      labs(title = unique(df$sample), x = ifelse(input$x_axis_type == "Volume", "Volume", "Fraction Number"), y = "Absorbance") +
+      labs(title = unique(df$sample), x = ifelse(input$x_axis_type == "Volume", "Volume", "Fraction Number"), y = "Absorbance (260 nm)") +
       theme(axis.title = element_text(size = 16), plot.title = element_text(size = 18, face = "bold", hjust = 0.5, margin = margin(b = 20)))
     
     if (input$x_axis_type == "Volume") {
@@ -129,7 +129,7 @@ server <- function(input, output, session) {
       geom_vline(xintercept = input$max_fraction, linetype = "dashed", color = "darkred") +
       geom_hline(yintercept = input$baseline, linetype = "dashed", color = "darkgreen") +
       theme(axis.title = element_text(size = 16), plot.title = element_text(size = 18, face = "bold", hjust = 0.5, margin = margin(b = 20))) +
-      labs(title = unique(df$sample), x = ifelse(input$x_axis_type == "Volume", "Volume", "Fraction Number"), y = "Absorbance")
+      labs(title = unique(df$sample), x = ifelse(input$x_axis_type == "Volume", "Volume", "Fraction Number"), y = "Absorbance (260 nm)")
     if (input$x_axis_type == "Volume") {
       p_save <- p_save + scale_x_continuous(breaks = scales::pretty_breaks(n = 10))
     } else {
