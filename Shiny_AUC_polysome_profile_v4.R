@@ -73,7 +73,7 @@ server <- function(input, output, session) {
     df <- rv$data
     
     p <- ggplot(df, aes(x = cum_vol, y = Absorbance)) +
-      geom_line(size = 1) + theme_bw() +
+      geom_line(linewidth = 1) + theme_bw() +
       scale_y_continuous(limits = c(input$ymin, input$ymax)) +
       geom_vline(xintercept = input$start_80s, linetype = "dashed", color = "darkblue") +
       geom_vline(xintercept = input$end_80s, linetype = "dashed", color = "darkblue") +
@@ -122,7 +122,7 @@ server <- function(input, output, session) {
     fullpath <- file.path(clean_dir, filename)
     
     p_save <- ggplot(df, aes(x = cum_vol, y = Absorbance)) +
-      geom_line(size = 1) + theme_bw() +
+      geom_line(linewidth = 1) + theme_bw() +
       scale_y_continuous(limits = c(input$ymin, input$ymax)) +
       geom_vline(xintercept = input$start_80s, linetype = "dashed", color = "darkblue") +
       geom_vline(xintercept = input$end_80s, linetype = "dashed", color = "darkblue") +
